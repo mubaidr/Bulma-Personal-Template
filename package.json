@@ -37,7 +37,7 @@
   },
   "scripts": {
     "build": "npm run clean && npm run build-template",
-    "build-template": "parcel build ./template/index.html --out-dir ./docs/ --no-source-maps",
+    "build-template": "parcel build ./template/index.html --out-dir ./docs/ --public-url ./ --no-source-maps",
     "clean": "del-cli docs --force",
     "dev": "parcel ./template/index.html --open",
     "lint": "eslint --ext .html,.js ./template --fix",
