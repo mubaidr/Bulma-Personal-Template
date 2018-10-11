@@ -2,6 +2,8 @@
 
 A template for Personal/portfolio website using Bulma css framework.
 
+## [View Demo](http://mubaidr.js.org/Bulma-Personal-Template/)
+
 ## Build Setup
 
 ```bash
