@@ -1,0 +1,48 @@
+{
+  "author": "mubaidr@gmail.com",
+  "bugs": {
+    "url": "https://github.com/mubaidr/Bulma-Personal-Template/issues"
+  },
+  "dependencies": {},
+  "description": "A template for Personal/portfolio website using Bulma css framework",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "del-cli": "^1.1.0",
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-html": "^4.0.6",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "parcel-bundler": "^1.10.2",
+    "prettier": "^1.14.3"
+  },
+  "homepage": "https://github.com/mubaidr/Bulma-Personal-Template#readme",
+  "keywords": [
+    "bulma",
+    "personal",
+    "portfolio",
+    "template",
+    "bulma-fluent"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "bulma-personal-template",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mubaidr/Bulma-Personal-Template.git"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run build-template",
+    "build-template": "parcel build ./template/index.html --out-dir ./docs/ --no-source-maps",
+    "clean": "del-cli docs --force",
+    "dev": "parcel ./template/index.html --open",
+    "lint": "eslint --ext .html,.js ./template --fix",
+    "prettier": "prettier --write ./template/**/*.js",
+    "serve": "npm run dev"
+  },
+  "version": "1.0.0"
+}
